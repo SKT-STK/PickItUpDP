@@ -1,0 +1,55 @@
+{
+  "description": "",
+  "supported_items": "minecraft:music_disc_13",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "requirements": [
+          {
+            "condition": "any_of",
+            "terms": [
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:chest"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:furnace"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:blast_furnace"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:smoker"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:barrel"
+              }
+            ]
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "piu:main"
+        }
+      }
+    ]
+  }
+}
