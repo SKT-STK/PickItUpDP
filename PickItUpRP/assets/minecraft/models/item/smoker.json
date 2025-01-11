@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/smoker",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1001
+      },
+      "model": "piu:item/smoker"
+    }
+  ]
+}
