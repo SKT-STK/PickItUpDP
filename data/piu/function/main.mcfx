@@ -21,3 +21,4 @@ tag @e[tag=piu.this2] remove piu.this2
 
 attribute @s movement_speed base set 0.5
 effect give @s slowness infinite 5 true
+advancement grant @s only piu:wrench

@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:dirt",
+      "components": {
+        "minecraft:item_model": "piu:wrench"
+      }
+    },
+    "title": "Freaking Finally!",
+    "description": "Use the Pickuping Wrench to move a Block Entity",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraft:story/smelt_iron",
+  "criteria": {
+    "main": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
