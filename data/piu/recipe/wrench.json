@@ -24,9 +24,6 @@
       },
       "minecraft:enchantment_glint_override": false,
       "minecraft:damage": 0,
-      "minecraft:repairable": {
-        "items": "minecraft:iron_ingot"
-      },
       "minecraft:tool": {
         "rules": []
       },
