@@ -17,8 +17,10 @@ scoreboard players add @s piu.item.damage 1
 execute store result storage piu:selected_item damage int 1 run scoreboard players get @s piu.item.damage
 execute unless score @s piu.item.damage matches 58 run function piu:raycast_give_item with storage piu:selected_item
 execute if score @s piu.item.damage matches 58 run item replace entity @s weapon.mainhand with air
+execute at @s if score @s piu.item.damage matches 58 run playsound minecraft:entity.item.break player @a ~ ~ ~ 1
 
 scoreboard players reset @s piu.raycast.length
 
+playsound piu:blockentity.place block @a ~ ~ ~ 1
 attribute @s movement_speed base set 0.1
 effect clear @s slowness

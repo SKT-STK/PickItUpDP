@@ -27,7 +27,12 @@
       "minecraft:tool": {
         "rules": []
       },
-      "minecraft:max_damage": 58
+      "minecraft:max_damage": 58,
+      "repairable": {
+        "items": [
+          "minecraft:iron_ingot"
+        ]
+      }
     }
   }
 }

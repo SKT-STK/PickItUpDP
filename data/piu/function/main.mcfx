@@ -3,6 +3,7 @@ scoreboard players operation @s piu.id = %global piu.id
 
 execute summon item{Owner:[I;0,0,0,0],Tags:["piu.this"],Item:{id:"minecraft:music_disc_13",components:{"minecraft:custom_data":{piu.blockentity:1b},"minecraft:item_name":'"Block Entity"',"minecraft:custom_model_data":1001}}} run data modify entity @s Item.components."minecraft:custom_data"."piu.block" set from block ~ ~ ~
 data modify entity @n[tag=piu.this] Item.components."minecraft:item_model" set string block ~ ~ ~ id
+tag @n[tag=piu.this] add piu.this3
 execute store result score @s piu.item.damage run data get entity @s SelectedItem.components."minecraft:damage"
 item replace entity @s weapon.mainhand with air
 setblock ~ ~ ~ air
@@ -13,6 +14,7 @@ tag @s add piu.has_interaction
 execute in piu:piu run forceload add -100 -100 100 100
 schedule function piu:main_schedule 2t
 
+playsound piu:blockentity.pickup block @a ~ ~ ~ 1
 attribute @s movement_speed base set 0.5
 effect give @s slowness infinite 5 true
 advancement grant @s only piu:wrench

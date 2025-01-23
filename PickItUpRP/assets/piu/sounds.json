@@ -1,0 +1,12 @@
+{
+  "blockentity.pickup": {
+    "sounds": [
+      "piu:blockentity/pickup/1"
+    ]
+  },
+  "blockentity.place": {
+    "sounds": [
+      "piu:blockentity/place/1"
+    ]
+  }
+}
