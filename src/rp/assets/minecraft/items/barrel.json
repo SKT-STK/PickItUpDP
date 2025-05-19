@@ -1,0 +1,22 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "component",
+    "component": "custom_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/barrel"
+    },
+    "cases": [
+      {
+        "when": {
+          "piu.picked_up": true
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "piu:item/barrel"
+        }
+      }
+    ]
+  }
+}

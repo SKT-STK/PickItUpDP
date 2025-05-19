@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "minecraft:hopper",
+    "minecraft:furnace",
+    "minecraft:dispenser",
+    "minecraft:dropper"
+  ]
+}

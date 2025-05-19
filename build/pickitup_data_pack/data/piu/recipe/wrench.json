@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " @ ",
+    " @@",
+    "@  "
+  ],
+  "key": {
+    "@": [
+      "minecraft:iron_ingot"
+    ]
+  },
+  "result": {
+    "id": "minecraft:music_disc_13",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Pickuping Wrench",
+        "color": "white"
+      },
+      "minecraft:item_model": "piu:wrench",
+      "!minecraft:jukebox_playable": {},
+      "minecraft:enchantments": {
+        "piu:piu": 1
+      },
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:enchantments"
+        ]
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:damage": 0,
+      "minecraft:max_damage": 58,
+      "repairable": {
+        "items": [
+          "minecraft:iron_ingot"
+        ]
+      },
+      "minecraft:tool": {
+        "rules": [],
+        "can_destroy_blocks_in_creative": false
+      }
+    }
+  }
+}

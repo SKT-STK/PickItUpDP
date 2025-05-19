@@ -1,0 +1,51 @@
+{
+  "criteria": {
+    "main": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:smoker"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:blast_furnace"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:furnace"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:trapped_chest"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:chest"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:hopper"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:dispenser"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:dropper"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "piu:place/main"
+  }
+}
