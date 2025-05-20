@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minecraft:entity/chest/normal",
-		"particle": "minecraft:entity/chest/normal"
+		"0": "piu:block/chest",
+		"particle": "piu:block/chest"
 	},
 	"elements": [
 		{

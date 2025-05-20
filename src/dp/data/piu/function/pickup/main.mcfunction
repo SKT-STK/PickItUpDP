@@ -32,6 +32,7 @@ function(with entity @s):
   $data modify storage piu:piu "$(UUID)".items insert 9 from entity @s Inventory[{Slot:-106b}]
   $execute unless items entity @s weapon.offhand * run data modify storage piu:piu "$(UUID)".items insert 9 value {id:dirt,components:{"minecraft:custom_data":{piu.clear:true}}}
   $execute store result storage piu:piu "$(UUID)".items[{components:{"minecraft:item_model":"piu:wrench"}}].components."minecraft:damage" int 1 run scoreboard players operation @s piu.damage += #1 piu.CONST
+  $execute if score @s piu.damage matches 58 run data modify storage piu:piu "$(UUID)".items[{components:{"minecraft:item_model":"piu:wrench"}}] set value {id:dirt,components:{"minecraft:custom_data":{piu.clear:true}}}
 
 summon item ~ ~ ~ {Tags:["piu.this"],Item:{id:dirt,components:{"minecraft:custom_data":{piu.picked_up:true},"minecraft:max_stack_size":1}},PickupDelay:-1}
 execute as @e[type=item,tag=piu.this]:

@@ -4,7 +4,10 @@
     "minecraft:trapped_chest",
     "minecraft:hopper",
     "minecraft:furnace",
+    "minecraft:smoker",
+    "minecraft:blast_furnace",
     "minecraft:dispenser",
-    "minecraft:dropper"
+    "minecraft:dropper",
+    "minecraft:barrel"
   ]
 }

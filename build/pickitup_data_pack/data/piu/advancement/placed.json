@@ -9,15 +9,7 @@
             "terms": [
               {
                 "condition": "minecraft:block_state_property",
-                "block": "minecraft:smoker"
-              },
-              {
-                "condition": "minecraft:block_state_property",
-                "block": "minecraft:blast_furnace"
-              },
-              {
-                "condition": "minecraft:block_state_property",
-                "block": "minecraft:furnace"
+                "block": "minecraft:chest"
               },
               {
                 "condition": "minecraft:block_state_property",
@@ -25,7 +17,19 @@
               },
               {
                 "condition": "minecraft:block_state_property",
-                "block": "minecraft:chest"
+                "block": "minecraft:furnace"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:blast_furnace"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:smoker"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:barrel"
               },
               {
                 "condition": "minecraft:block_state_property",
