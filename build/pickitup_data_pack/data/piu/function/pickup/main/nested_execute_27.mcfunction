@@ -25,4 +25,5 @@ execute if score @s piu.count.items matches 23.. run function piu:pickup/main/ne
 execute if score @s piu.count.items matches 24.. run function piu:pickup/main/nested_execute_24
 execute if score @s piu.count.items matches 25.. run function piu:pickup/main/nested_execute_25
 execute if score @s piu.count.items matches 26.. run function piu:pickup/main/nested_execute_26
+function piu:pickup/main/macro_0 with entity @p[tag=piu.this2]
 forceload remove 0 0

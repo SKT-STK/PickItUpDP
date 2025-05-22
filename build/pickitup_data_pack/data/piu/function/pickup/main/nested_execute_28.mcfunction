@@ -1,6 +1,6 @@
 data modify entity @s Item.id set from block ~ ~ ~ id
 execute store result score @s piu.count.items run data get block ~ ~ ~ Items
-scoreboard players operation @s piu.count.items -= #1 piu.CONST
+scoreboard players operation @s piu.count.items -= $1 piu.CONST
 execute in piu:forceload run forceload add 0 0
 clone ~ ~ ~ ~ ~ ~ to piu:forceload 0 1 0 replace
 setblock ~ ~ ~ air
